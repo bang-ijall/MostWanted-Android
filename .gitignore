@@ -1,0 +1,24 @@
+.gradle/
+build/
+app/build/
+app/third_party/
+.cxx/
+local.properties
+*.apk
+*.xbe
+*.iso
+generated/*
+!generated/.gitkeep
+assets/
+
+# signing key and its passwords: never in the repository
+keystore/*.jks
+keystore/keystore.properties
+# editors and macOS
+.DS_Store
+.idea/
+.vscode/
+app/.cxx/
+
+# CI workflow kept out (needs a token with the workflow scope and the XBE_URL secret)
+.github/

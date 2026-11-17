@@ -1,0 +1,9 @@
+/* the library's exports: SDL's Java side finds SDL_main by name, the app's Java side its native methods; everything else stays inside (60 000 recompiled
+   functions in the dynamic symbol table were about 3 MB of the app) */
+{
+    global:
+        SDL_main;
+        Java_com_jall_ea_nfsmw_*;
+    local:
+        *;
+};
